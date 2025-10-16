@@ -1,0 +1,189 @@
+/* === GENERAL PAGE STYLE === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb")
+    no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+/* === CONTAINER === */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+/* === CARD BASE === */
+.card {
+  width: 420px;
+  height: 540px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+
+/* === LEFT CARD === */
+.card-left {
+  background: linear-gradient(135deg, #b5e7ff, #ffffff);
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #0078d7;
+  letter-spacing: 2px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  width: 180px;
+  font-size: 1rem;
+}
+
+.search-btn {
+  background: #0078d7;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  background: #005fa3;
+}
+
+.weather-info {
+  text-align: center;
+}
+
+.weather-info .city {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.weather-info .temp {
+  font-size: 5rem;
+  color: #0078d7;
+}
+
+.weather-info .condition {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* === 5-DAY FORECAST === */
+.forecast {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.forecast h3 {
+  color: #0078d7;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.forecast-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.forecast-list li {
+  text-align: center;
+}
+
+.forecast-list span {
+  display: block;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.forecast-list strong {
+  color: #0078d7;
+  font-size: 1.1rem;
+}
+
+/* === RIGHT CARD === */
+.card-right {
+  background: url("sunnyN.jpg")
+    no-repeat center center/cover;
+  position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blury(10px);
+}
+
+.details {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  color: #fff;
+}
+
+.details h3 {
+  color: #ffd54f;
+  margin-bottom: 10px;
+}
+
+.details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.details li {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .card {
+    width: 90%;
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- === CARD 1 === -->
+    <div class="card card-left">
+      <h1 class="logo">WeatherNow</h1>
+
+      <form class="search-box">
+        <input type="text" placeholder="Enter location..." class="search-input">
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+
+      <div class="weather-info">
+        <h2 class="city">Addis Ababa</h2>
+        <h1 class="temp">24°C</h1>
+        <p class="condition">Sunny</p>
+      </div>
+
+      <!-- === 5-DAY FORECAST === -->
+      <div class="forecast">
+        <h3>Next 5 Days</h3>
+        <ul class="forecast-list">
+          <li><span>Mon</span><strong>26°C</strong></li>
+          <li><span>Tue</span><strong>27°C</strong></li>
+          <li><span>Wed</span><strong>25°C</strong></li>
+          <li><span>Thu</span><strong>24°C</strong></li>
+          <li><span>Fri</span><strong>28°C</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- === CARD 2 === -->
+    <div class="card card-right">
+      <div class="overlay"></div>
+      <div class="details">
+        <h3>Weather Details</h3>
+        <ul>
+          <li>Humidity: 58%</li>
+          <li>Wind Speed: 12 km/h</li>
+          <li>Feels Like: 25°C</li>
+          <li>Visibility: 10 km</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
