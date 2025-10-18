@@ -16,7 +16,7 @@ async function fetchWeather(city) {
     if (!location) return null;
     const [lat, lon] = location;
     try {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=47dbdf16739160bafc282ac496ddc6f0`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=************************`);
         const data = await response.json();
         console.log(data)
         const temp=((data.main.temp)-273.15).toFixed(2);
